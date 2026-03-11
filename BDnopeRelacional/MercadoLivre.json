@@ -1,39 +1,155 @@
 // Coleção: produtos
 {
-    "Id": 123,
-    "Nome": "Smartphone ABC",
-    "Valor": 1500.00,
-    "Categoria": "eletronicos",
+    "id": 123,
+    "nome": "Camiseta Remo",
+    "categoria": "Esportes",
+    "descricao": "Camiseta do Remo F.C",
+    "valor": 150.00,
     "imagens": [
-        "url1.jpg",
-        "url2.jpg"
+        "robertocarlos3.jpg",
+        "golfalta.jpg"
     ],
     "vendedor": {
         "id": 12345,
-        "nome": "vendedor_A",
-        "sobrenome": "sobrenome_A",
+        "nome": "Robertinho",
+        "sobrenome": "Carlos",
         "cnpj": "111111111111",
         "email": "vendedor@email.com"
     }
 }
 
-
-
-
-
-
-
-
-
-
-// Usuário : 
+// Coleção: vendedor
 {
-    "Id": 1,
-    "Nome": "Lucas",
-    "Sobrenome": "Inácio",
-    "CPF": "123456789-01",
-    "Endereço": "Agulhas Negras",
-    "Cartao_de_Crédito": "123456789012-12",
-    "Email": "lucas@gmail.com",
-    "Senha": "********"
+    "id": 12345,
+    "nome": "Robertinho",
+    "sobrenome": "Carlos",
+    "cnpj": "111111111111",
+    "email": "vendedor@email.com",
+    "senha": "*********",
+    "endereco": {
+        "rua": "Vila Dirce",
+        "numero": 123,
+        "cep": "1200000"
+    },
+    "produtos": [
+        {
+            "id": 123,
+            "nome": "Camiseta Remo",
+            "categoria": "Esportes",
+            "descricao": "Camiseta do Remo F.C",
+            "valor": 150.00,
+            "imagens": [
+                "robertocarlos3.jpg",
+                "golfalta.jpg"
+            ]
+        }
+    ]
+}
+
+// Coleção: compras
+{
+    "id": 1,
+    "usuario": {
+        "id": 1,
+        "nome": "Lucas",
+        "sobrenome": "Inácio",
+        "cpf": "123456789-01",
+        "email": "lucas@gmail.com",
+        "endereco": {
+            "rua": "Agulhas Negras",
+            "numero": 0,
+            "cep": "00000000"
+        },
+        "cartao_de_credito": "123456789012-12",
+        "senha": "********"
+    },
+    "produto": {
+        "id": 123,
+        "nome": "Camiseta Remo",
+        "categoria": "Esportes",
+        "descricao": "Camiseta do Remo F.C",
+        "valor": 150.00,
+        "imagens": [
+            "robertocarlos3.jpg",
+            "golfalta.jpg"
+        ],
+        "vendedor": {
+            "id": 12345,
+            "nome": "Robertinho",
+            "sobrenome": "Carlos",
+            "cnpj": "111111111111",
+            "email": "vendedor@email.com"
+        }
+    }
+}
+
+// Coleção: usuarios
+{
+    "id": 1,
+    "nome": "Lucas",
+    "sobrenome": "Inácio",
+    "cpf": "123456789-01",
+    "email": "lucas@gmail.com",
+    "senha": "********",
+    "endereco": {
+        "rua": "Agulhas Negras",
+        "numero": 0,
+        "cep": "00000000"
+    },
+    "cartao_de_credito": "123456789012-12",
+    "favoritos": [
+        {
+            "id": 1,
+            "usuario": {
+                "id": 1,
+                "nome": "Lucas",
+                "cpf": "123456789-01"
+            },
+            "produto": {
+                "id": 123,
+                "nome": "Camiseta Remo",
+                "categoria": "Esportes",
+                "valor": 150.00,
+                "imagens": [
+                    "robertocarlos3.jpg",
+                    "golfalta.jpg"
+                ],
+                "vendedor": {
+                    "id": 12345,
+                    "nome": "Robertinho",
+                    "sobrenome": "Carlos",
+                    "cnpj": "111111111111",
+                    "email": "vendedor@email.com"
+                }
+            }
+        }
+    ]
+}
+
+// Coleção: favoritos
+{
+    "id": 1,
+    "usuario": {
+        "id": 1,
+        "nome": "Lucas",
+        "cpf": "123456789-01"
+    },
+    "produto": {
+        "id": 123,
+        "nome": "Camiseta Remo",
+        "categoria": "Esportes",
+        "descricao": "Camiseta do Remo F.C",
+        "valor": 150.00,
+        "imagens": [
+            "robertocarlos3.jpg",
+            "golfalta.jpg"
+        ],
+        "vendedor": {
+            "id": 12345,
+            "nome": "Robertinho",
+            "sobrenome": "Carlos",
+            "cnpj": "111111111111",
+            "email": "vendedor@email.com"
+        }
+    }
 }
