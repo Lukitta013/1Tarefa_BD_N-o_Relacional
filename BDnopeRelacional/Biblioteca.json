@@ -1,0 +1,56 @@
+// Coleção: usuarios
+{
+    "id": 1,
+    "nome": "Lucas",
+    "sobrenome": "Inácio",
+    "endereco": "Rua Agulhas Negras, 123, São José dos Campos"
+}
+
+// Coleção: autores
+{
+    "id": 1,
+    "nome": "Machado",
+    "sobrenome": "de Assis"
+}
+
+// Coleção: livros
+{
+    "id": 1,
+    "nome": "Dom Casmurro",
+    "classificacao": 10,
+    "genero": "Romance",
+    "editora": "Editora Brasileira",
+    "autor": {
+        "id": 1,
+        "nome": "Machado",
+        "sobrenome": "de Assis"
+    }
+}
+
+// Coleção: emprestimos
+{
+    "id": 1,
+    "data_emprestimo": "2026-03-01",
+    "data_devolucao_prevista": "2026-03-15",
+    "data_devolucao_efetiva": "2026-03-14",
+    "usuario": {
+        "id": 1,
+        "nome": "Lucas",
+        "sobrenome": "Inácio",
+        "endereco": "Rua Agulhas Negras, 123, São José dos Campos"
+    },
+    "livros": [
+        {
+            "id": 1,
+            "nome": "Dom Casmurro",
+            "classificacao": 10,
+            "genero": "Romance",
+            "editora": "Editora Brasileira",
+            "autor": {
+                "id": 1,
+                "nome": "Machado",
+                "sobrenome": "de Assis"
+            }
+        }
+    ]
+}
