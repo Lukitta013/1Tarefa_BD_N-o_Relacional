@@ -1,0 +1,39 @@
+// Coleção: produtos
+{
+    "Id": 123,
+    "Nome": "Smartphone ABC",
+    "Valor": 1500.00,
+    "Categoria": "eletronicos",
+    "imagens": [
+        "url1.jpg",
+        "url2.jpg"
+    ],
+    "vendedor": {
+        "id": 12345,
+        "nome": "vendedor_A",
+        "sobrenome": "sobrenome_A",
+        "cnpj": "111111111111",
+        "email": "vendedor@email.com"
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// Usuário : 
+{
+    "Id": 1,
+    "Nome": "Lucas",
+    "Sobrenome": "Inácio",
+    "CPF": "123456789-01",
+    "Endereço": "Agulhas Negras",
+    "Cartao_de_Crédito": "123456789012-12",
+    "Email": "lucas@gmail.com",
+    "Senha": "********"
+}
